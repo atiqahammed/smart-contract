@@ -9,8 +9,6 @@ describe("MyNFT", function() {
     expect(minter).not.null;
     const myNFT = await ethers.getContractFactory("MyNFT");
     const nft = await myNFT.deploy();
-    console.log(nft)
-
     await nft.deployed();
   });
 
